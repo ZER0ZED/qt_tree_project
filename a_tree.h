@@ -1,6 +1,7 @@
 #ifndef A_TREE_H
 #define A_TREE_H
 
+#include <QWidget>
 #include <QTreeWidget>
 #include <QTreeWidgetItem>
 #include <QMenu>
@@ -8,9 +9,12 @@
 #include <QInputDialog>
 #include <QMessageBox>
 #include <QMouseEvent>
-#include <QMenu>
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QLabel>
+#include <QPushButton>
 
-class A_Tree : public QTreeWidget
+class A_Tree : public QWidget
 {
     Q_OBJECT
 
@@ -22,6 +26,8 @@ public:
     QTreeWidgetItem* addChildItem(QTreeWidgetItem *parent, const QString &text);
     void deleteItem(QTreeWidgetItem *item);
     void editItem(QTreeWidgetItem *item);
+    void loadDemoData();
+    void clearAll();
 
     // Checkbox state management
     void updateParentCheckState(QTreeWidgetItem *item);
@@ -34,11 +40,22 @@ private slots:
     void addChildAction();
     void editAction();
     void deleteAction();
+    void onAddRootClicked();
+    void onLoadDemoClicked();
+    void onClearAllClicked();
 
 private:
+    void setupUI();
     void setupContextMenu();
-    void setItemCheckState(QTreeWidgetItem *item, Qt::CheckState state);
+    void setupCheckboxStyling();
     Qt::CheckState calculateParentCheckState(QTreeWidgetItem *parent);
+
+    // UI Components
+    QTreeWidget *m_treeWidget;
+    QLabel *m_titleLabel;
+    QPushButton *m_addRootBtn;
+    QPushButton *m_loadDemoBtn;
+    QPushButton *m_clearBtn;
 
     // Context menu
     QMenu *m_contextMenu;
@@ -51,6 +68,9 @@ private:
 
     // Edit flag for items
     bool m_editFlag;
+
+    // Root counter for adding items
+    int m_rootCounter;
 };
 
 #endif // A_TREE_H

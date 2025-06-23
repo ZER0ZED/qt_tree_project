@@ -47,7 +47,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 23,
+				"line" : 20,
 				"parent" : 0
 			},
 			{
@@ -71,19 +71,19 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 62,
+				"line" : 51,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 1,
-				"line" : 45,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
 				"command" : 8,
 				"file" : 1,
-				"line" : 13,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
@@ -291,11 +291,11 @@
 	"dependencies" : 
 	[
 		{
-			"backtrace" : 0,
-			"id" : "qt_tree_project_autogen::@6890427a1f51a3e7e1df"
+			"id" : "qt_tree_project_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
 		},
 		{
-			"id" : "qt_tree_project_autogen_timestamp_deps::@6890427a1f51a3e7e1df"
+			"backtrace" : 0,
+			"id" : "qt_tree_project_autogen::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "qt_tree_project::@6890427a1f51a3e7e1df",
@@ -383,29 +383,21 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				3,
-				5
-			]
-		},
-		{
-			"name" : "Forms",
-			"sourceIndexes" : 
-			[
-				4
+				3
 			]
 		},
 		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				6
+				4
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				7
+				5
 			]
 		}
 	],
@@ -436,27 +428,16 @@
 			"sourceGroupIndex" : 1
 		},
 		{
-			"backtrace" : 4,
-			"path" : "a_tree.ui",
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "build/Desktop_Qt_6_9_1-Debug/qt_tree_project_autogen/timestamp",
 			"sourceGroupIndex" : 2
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_9_1-Debug/qt_tree_project_autogen/include/ui_a_tree.h",
-			"sourceGroupIndex" : 1
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_9_1-Debug/qt_tree_project_autogen/timestamp",
-			"sourceGroupIndex" : 3
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_1-Debug/qt_tree_project_autogen/timestamp.rule",
-			"sourceGroupIndex" : 4
+			"sourceGroupIndex" : 3
 		}
 	],
 	"type" : "EXECUTABLE"

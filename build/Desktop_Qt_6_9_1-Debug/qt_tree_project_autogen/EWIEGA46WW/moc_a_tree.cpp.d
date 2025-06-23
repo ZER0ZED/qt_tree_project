@@ -169,6 +169,7 @@
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtGui/qpaintdevice.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtGui/qpalette.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtGui/qpen.h \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtGui/qpicture.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtGui/qpixelformat.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtGui/qpixmap.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtGui/qpointingdevice.h \
@@ -190,23 +191,35 @@
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtGui/qvector2d.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtGui/qvectornd.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtGui/qwindowdefs.h \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/QHBoxLayout \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/QInputDialog \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/QLabel \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/QMenu \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/QMessageBox \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/QPushButton \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/QTreeWidget \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/QTreeWidgetItem \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/QVBoxLayout \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/QWidget \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qabstractbutton.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qabstractitemdelegate.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qabstractitemview.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qabstractscrollarea.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qabstractslider.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qabstractspinbox.h \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qboxlayout.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qdialog.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qdialogbuttonbox.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qframe.h \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qgridlayout.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qinputdialog.h \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qlabel.h \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qlayout.h \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qlayoutitem.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qlineedit.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qmenu.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qmessagebox.h \
+  /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qpushbutton.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qrubberband.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qsizepolicy.h \
   /home/zerozed/Qt/6.9.1/gcc_64/include/QtWidgets/qslider.h \

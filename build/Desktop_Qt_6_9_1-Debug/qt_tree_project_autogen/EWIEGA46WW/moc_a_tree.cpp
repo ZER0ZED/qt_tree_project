@@ -50,7 +50,10 @@ template <> constexpr inline auto A_Tree::qt_create_metaobjectdata<qt_meta_tag_Z
         "addRootAction",
         "addChildAction",
         "editAction",
-        "deleteAction"
+        "deleteAction",
+        "onAddRootClicked",
+        "onLoadDemoClicked",
+        "onClearAllClicked"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -70,6 +73,12 @@ template <> constexpr inline auto A_Tree::qt_create_metaobjectdata<qt_meta_tag_Z
         QtMocHelpers::SlotData<void()>(10, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'deleteAction'
         QtMocHelpers::SlotData<void()>(11, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onAddRootClicked'
+        QtMocHelpers::SlotData<void()>(12, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onLoadDemoClicked'
+        QtMocHelpers::SlotData<void()>(13, 2, QMC::AccessPrivate, QMetaType::Void),
+        // Slot 'onClearAllClicked'
+        QtMocHelpers::SlotData<void()>(14, 2, QMC::AccessPrivate, QMetaType::Void),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -79,7 +88,7 @@ template <> constexpr inline auto A_Tree::qt_create_metaobjectdata<qt_meta_tag_Z
             qt_methods, qt_properties, qt_enums);
 }
 Q_CONSTINIT const QMetaObject A_Tree::staticMetaObject = { {
-    QMetaObject::SuperData::link<QTreeWidget::staticMetaObject>(),
+    QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
     qt_staticMetaObjectStaticContent<qt_meta_tag_ZN6A_TreeE_t>.stringdata,
     qt_staticMetaObjectStaticContent<qt_meta_tag_ZN6A_TreeE_t>.data,
     qt_static_metacall,
@@ -99,6 +108,9 @@ void A_Tree::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void
         case 3: _t->addChildAction(); break;
         case 4: _t->editAction(); break;
         case 5: _t->deleteAction(); break;
+        case 6: _t->onAddRootClicked(); break;
+        case 7: _t->onLoadDemoClicked(); break;
+        case 8: _t->onClearAllClicked(); break;
         default: ;
         }
     }
@@ -114,23 +126,23 @@ void *A_Tree::qt_metacast(const char *_clname)
     if (!_clname) return nullptr;
     if (!strcmp(_clname, qt_staticMetaObjectStaticContent<qt_meta_tag_ZN6A_TreeE_t>.strings))
         return static_cast<void*>(this);
-    return QTreeWidget::qt_metacast(_clname);
+    return QWidget::qt_metacast(_clname);
 }
 
 int A_Tree::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
-    _id = QTreeWidget::qt_metacall(_c, _id, _a);
+    _id = QWidget::qt_metacall(_c, _id, _a);
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 9)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 9;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 9)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 9;
     }
     return _id;
 }
