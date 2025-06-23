@@ -1,0 +1,9 @@
+/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/qt_tree_project.dir
+/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/edit_cache.dir
+/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/rebuild_cache.dir
+/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/list_install_components.dir
+/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/install.dir
+/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/install/local.dir
+/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/install/strip.dir
+/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/qt_tree_project_autogen_timestamp_deps.dir
+/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/CMakeFiles/qt_tree_project_autogen.dir

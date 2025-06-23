@@ -1,0 +1,15 @@
+# ninja log v6
+2	495	1750670486338178524	qt_tree_project_autogen/timestamp	7e2a3c1bdd515e0b
+2	495	1750670486338178524	qt_tree_project_autogen/mocs_compilation.cpp	7e2a3c1bdd515e0b
+2	495	1750670486338178524	/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/qt_tree_project_autogen/timestamp	7e2a3c1bdd515e0b
+2	495	1750670486338178524	/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/qt_tree_project_autogen/mocs_compilation.cpp	7e2a3c1bdd515e0b
+496	2787	1750670486343179037	CMakeFiles/qt_tree_project.dir/qt_tree_project_autogen/mocs_compilation.cpp.o	d64ed1cd6cedcaf
+497	2809	1750670486344179140	CMakeFiles/qt_tree_project.dir/main.cpp.o	3ada978f82ee8b95
+497	2937	1750670486344179140	CMakeFiles/qt_tree_project.dir/a_tree.cpp.o	752e990acc43dba
+2938	3323	1750670488784430593	qt_tree_project	b0cd4fb5e28e2a39
+3	14	1750670673497902722	qt_tree_project_autogen/timestamp	7e2a3c1bdd515e0b
+3	14	1750670673497902722	qt_tree_project_autogen/mocs_compilation.cpp	7e2a3c1bdd515e0b
+3	14	1750670673497902722	/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/qt_tree_project_autogen/timestamp	7e2a3c1bdd515e0b
+3	14	1750670673497902722	/home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/qt_tree_project_autogen/mocs_compilation.cpp	7e2a3c1bdd515e0b
+14	2043	1750670673508903098	CMakeFiles/qt_tree_project.dir/main.cpp.o	3ada978f82ee8b95
+2043	2368	1750670675537973478	qt_tree_project	b0cd4fb5e28e2a39
