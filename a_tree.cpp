@@ -5,7 +5,7 @@ A_Tree::A_Tree(QWidget *parent)
 {
     setupUI();
     setupContextMenu();
-    setupCheckboxStyling();
+    // Removed setupCheckboxStyling() call
 
     // Connect tree widget signals
     connect(m_treeWidget, &QTreeWidget::itemChanged, this, &A_Tree::onItemChanged);
@@ -22,6 +22,9 @@ A_Tree::A_Tree(QWidget *parent)
 
 void A_Tree::setupUI()
 {
+    // Set dark gray background for the widget
+    setStyleSheet("A_Tree { background-color: #3a3a3a; }");
+
     // Create main layout
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     mainLayout->setContentsMargins(10, 10, 10, 10);
@@ -29,7 +32,7 @@ void A_Tree::setupUI()
 
     // Create title label
     m_titleLabel = new QLabel("Tree Widget", this);
-    m_titleLabel->setStyleSheet("font-size: 16px; font-weight: bold; color: #FF8C00;");
+    m_titleLabel->setStyleSheet("font-size: 16px; font-weight: bold; color: #FF8C00; background-color: transparent;");
     m_titleLabel->setAlignment(Qt::AlignCenter);
     mainLayout->addWidget(m_titleLabel);
 
@@ -38,6 +41,33 @@ void A_Tree::setupUI()
     m_treeWidget->setHeaderLabel("Tree Items");
     m_treeWidget->setContextMenuPolicy(Qt::CustomContextMenu);
     m_treeWidget->setSelectionMode(QAbstractItemView::SingleSelection);
+
+    // Set tree widget styling for dark theme
+    m_treeWidget->setStyleSheet(
+        "QTreeWidget {"
+        "    background-color: #404040;"
+        "    color: white;"
+        "    border: 1px solid #555555;"
+        "    selection-background-color: #0078d4;"
+        "}"
+        "QTreeWidget::item {"
+        "    padding: 2px;"
+        "    border: none;"
+        "}"
+        "QTreeWidget::item:selected {"
+        "    background-color: #0078d4;"
+        "}"
+        "QTreeWidget::item:hover {"
+        "    background-color: #4a4a4a;"
+        "}"
+        "QHeaderView::section {"
+        "    background-color: #505050;"
+        "    color: white;"
+        "    border: 1px solid #666666;"
+        "    padding: 4px;"
+        "}"
+        );
+
     mainLayout->addWidget(m_treeWidget);
 
     // Create button layout
@@ -76,46 +106,7 @@ void A_Tree::setupUI()
     mainLayout->addLayout(buttonLayout);
 }
 
-void A_Tree::setupCheckboxStyling()
-{
-    // Custom stylesheet for better checkbox visibility
-    QString checkboxStyle =
-        "QTreeWidget::indicator:unchecked {"
-        "    background-color: white;"
-        "    border: 2px solid #bdc3c7;"
-        "    border-radius: 3px;"
-        "    width: 14px;"
-        "    height: 14px;"
-        "}"
-        "QTreeWidget::indicator:checked {"
-        "    background-color: #27ae60;"
-        "    border: 2px solid #27ae60;"
-        "    border-radius: 3px;"
-        "    width: 14px;"
-        "    height: 14px;"
-        "}"
-        "QTreeWidget::indicator:indeterminate {"
-        "    background-color: #f39c12;"
-        "    border: 2px solid #f39c12;"
-        "    border-radius: 3px;"
-        "    width: 14px;"
-        "    height: 14px;"
-        "}"
-        "QTreeWidget::indicator:unchecked:hover {"
-        "    background-color: #ecf0f1;"
-        "    border: 2px solid #95a5a6;"
-        "}"
-        "QTreeWidget::indicator:checked:hover {"
-        "    background-color: #2ecc71;"
-        "    border: 2px solid #2ecc71;"
-        "}"
-        "QTreeWidget::indicator:indeterminate:hover {"
-        "    background-color: #e67e22;"
-        "    border: 2px solid #e67e22;"
-        "}";
-
-    m_treeWidget->setStyleSheet(checkboxStyle);
-}
+// Removed setupCheckboxStyling() method entirely
 
 void A_Tree::setupContextMenu()
 {

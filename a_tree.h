@@ -47,7 +47,7 @@ private slots:
 private:
     void setupUI();
     void setupContextMenu();
-    void setupCheckboxStyling();
+    // Removed setupCheckboxStyling() declaration
     Qt::CheckState calculateParentCheckState(QTreeWidgetItem *parent);
 
     // UI Components
