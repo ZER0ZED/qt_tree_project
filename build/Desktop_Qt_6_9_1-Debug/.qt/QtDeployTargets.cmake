@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_qt_tree_project_FILE /home/zerozed/projects/qt_tree_project/build/Desktop_Qt_6_9_1-Debug/qt_tree_project)
+set(__QT_DEPLOY_TARGET_qt_tree_project_TYPE EXECUTABLE)

@@ -77,7 +77,7 @@ void A_Tree::SetTreeWidgetStyle()
 
         "QTreeWidget::item:selected {"
         "    background-color: #FF8C00;"                  // Selected item background
-        "    color: #2D2D2D;"                             // Selected item text color
+        "    color: #FFFFFF;"                             // Selected item text color
         "    border-radius: 4px;"                         // Rounded selection
         "}"
 
@@ -159,7 +159,13 @@ QTreeWidgetItem* A_Tree::AddRootItem(const QString &text)
     QTreeWidgetItem *_newItem = new QTreeWidgetItem();    // Create new tree item
     _newItem->setText(0, text.trimmed());                 // Set item text (trimmed)
     _newItem->setCheckState(0, Qt::Unchecked);            // Set initial checkbox state to unchecked
-    _newItem->setFlags(_newItem->flags() | Qt::ItemIsUserCheckable | Qt::ItemIsEditable);  // Enable checkbox and editing
+
+    // Set flags based on current edit mode state
+    Qt::ItemFlags _flags = _newItem->flags() | Qt::ItemIsUserCheckable;
+    if (IsEditModeEnabled) {
+        _flags |= Qt::ItemIsEditable;                     // Add editable flag only if edit mode is enabled
+    }
+    _newItem->setFlags(_flags);                           // Apply the flags
 
     TreeWidget->addTopLevelItem(_newItem);                // Add item to tree as root level
     TreeWidget->expandItem(_newItem);                     // Expand the new item to show potential children
@@ -183,7 +189,13 @@ QTreeWidgetItem* A_Tree::AddChildItem(QTreeWidgetItem *parent, const QString &te
     QTreeWidgetItem *_newChild = new QTreeWidgetItem();   // Create new child item
     _newChild->setText(0, text.trimmed());                // Set child text (trimmed)
     _newChild->setCheckState(0, Qt::Unchecked);           // Set initial checkbox state to unchecked
-    _newChild->setFlags(_newChild->flags() | Qt::ItemIsUserCheckable | Qt::ItemIsEditable);  // Enable checkbox and editing
+
+    // Set flags based on current edit mode state
+    Qt::ItemFlags _flags = _newChild->flags() | Qt::ItemIsUserCheckable;
+    if (IsEditModeEnabled) {
+        _flags |= Qt::ItemIsEditable;                     // Add editable flag only if edit mode is enabled
+    }
+    _newChild->setFlags(_flags);                          // Apply the flags
 
     parent->addChild(_newChild);                          // Add child to parent item
     parent->setExpanded(true);                            // Expand parent to show new child
